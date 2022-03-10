@@ -49,7 +49,8 @@ public class RetroController : MonoBehaviour
             }
 
             if (!timeReached && timer > 2) {
-                rigid.bodyType = RigidbodyType2D.Dynamic;
+                anim.Play("Fall 1");
+                //rigid.bodyType = RigidbodyType2D.Dynamic;
                 timeReached = true;
             }
         }
